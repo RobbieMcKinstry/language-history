@@ -92,10 +92,11 @@ export default class Presentation extends React.Component {
 
         {/* The Lambda Calculus 2 */}
         <Slide transition={["fade"]} bgColor="tertiary">
-          <Text size={3} textColor="secondary">
+          <Text size={1} fit textColor="secondary">
             Modern subset published in 1936 by Alonzo Church
           </Text>
-          <Text size={3} textColor="secondary">
+            <br/>
+          <Text size={1} fit fill  textColor="secondary">
             Same year Alan Turing defined the Turing Machine
           </Text>
         </Slide>
@@ -104,8 +105,9 @@ export default class Presentation extends React.Component {
         <Slide transition={["fade"]} bgColor="tertiary">
           <Heading size={2} textColor="secondary" caps>Church-Turing Thesis</Heading>
           <Text size={3} textColor="secondary">
-            Showed the Lambda Calculus == Turing Machines
+            Showed the Lambda Calculus <br/> == <br/> Turing Machines
           </Text>
+            <br/>
           <Text size={3} textColor="secondary">
             Showed computers could express any mathematical algorithm
           </Text>
@@ -113,48 +115,49 @@ export default class Presentation extends React.Component {
 
         {/* No computer */}
         <Slide transition={["fade"]} bgColor="tertiary">
-          <Text size={3} textColor="secondary">
-            No computer with programmable digital memory would exist for 20 years until Turing invented one to defeat the Nazis
+          <Text size={2} textColor="secondary" lineHeight={1}>
+            No computer with programmable digital memory would exist for 6 years until Turing invented one to defeat the Nazis
           </Text>
         </Slide>
         
         {/* Language but no computer */}
         <Slide transition={["fade"]} bgColor="tertiary">
           <Text size={3} textColor="secondary">
-            We had an impractical language, but no computer powerful enough to express it
+            We had a language, but no computer powerful enough to express it
           </Text> 
         </Slide>
 
 
         {/* Fortran Challenges */}
         <Slide transition={["fade"]} bgColor="tertiary">
-          <Heading size={2} textColor="secondary">Fortran</Heading>
+          <Heading size={2} textColor="secondary">10 Years of Silence</Heading>
           <Text size={3} textColor="secondary">
             Computing time was expensive
-          </Text>
+          </Text> <br/>
           <Text size={3} textColor="secondary">
             Programmer labor was cheap
-          </Text>
+          </Text><br/>
           <Text size={3} textColor="secondary">
             Wide skepticism that computers could write efficient machine code
-          </Text>
+          </Text><br/>
         </Slide>
 
 
         {/* Fortran 2 */}
         <Slide transition={["fade"]} bgColor="tertiary">
+          <Heading size={2} textColor="secondary">Fortran</Heading>
           <Text size={3} textColor="secondary">
             Released in 1956 at IBM by John Backus
-          </Text>
+          </Text><br/>
           <Text size={3} textColor="secondary">
             First efficient compiler
-          </Text>
+          </Text><br/>
           <Text size={3} textColor="secondary">
-            Developed to allow scientists and mathematicians to code using a language similar to equation syntax instead of having to learn machine code.
-          </Text>
+            Developed for scientists and mathematicians
+          </Text><br/>
           <Text>
             First time programmers had a "for" loop
-          </Text>
+          </Text><br/>
         </Slide>
 
 
@@ -163,9 +166,9 @@ export default class Presentation extends React.Component {
           <BlockQuote>
             <Quote textSize={72}>The sooner we can forget that Fortran ever existed the better.
             </Quote>
-            <Cite>
+            <Text>
             Edsger W. Dijkstra, ACM 1972 Turing Award Speech
-            </Cite>
+            </Text>
           </BlockQuote>
         </Slide>
 
@@ -176,9 +179,9 @@ export default class Presentation extends React.Component {
             <Quote textSize={36}>
                 Fortran&#39;s tragic fate has been its wide acceptance, mentally chaining thousands and thousands of programmers to our past mistakes. 
             </Quote>
-            <Cite>
+            <Text>
             Edsger W. Dijkstra, ACM 1972 Turing Award Speech
-            </Cite>
+            </Text>
           </BlockQuote>
         </Slide>
 
@@ -188,9 +191,9 @@ export default class Presentation extends React.Component {
             <Quote textSize={36}>
                 I pray daily that that more of my fellow-programmers may find the means of freeing themselves from the curse of compatibility.
             </Quote>
-            <Cite>
+            <Text>
             Edsger W. Dijkstra, ACM 1972 Turing Award Speech
-            </Cite>
+            </Text>
           </BlockQuote>
         </Slide>
 
