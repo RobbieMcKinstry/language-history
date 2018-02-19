@@ -12,6 +12,7 @@ import {
   Quote,
   Slide,
   Text,
+  Code,
 } from "spectacle";
 
 // Import theme
@@ -63,20 +64,28 @@ export default class Presentation extends React.Component {
         {/* Overview */}
         <Slide transition={["fade"]} bgColor="tertiary">
           <Heading size={2} textColor="secondary" caps>Overview</Heading>
-          <List>
-            <ListItem>Early Foundational Langs</ListItem>
-            <ListItem>Structured Languages</ListItem>
-            <ListItem>1980s Experimentation</ListItem>
-          </List>
+          <Text size={3} textColor="secondary" lineHeight={2}>
+            Early Foundational Langs
+          </Text>
+
+          <Text size={3} textColor="secondary" lineHeight={2}>
+            Structured Languages
+          </Text>
+
+          <Text size={3} textColor="secondary" lineHeight={2} >
+            1970s-1980s Experimentation
+          </Text>
+
         </Slide>
 
         {/* The Lambda Calculus */}
         <Slide transition={["fade"]} bgColor="tertiary">
           <Heading size={2} textColor="secondary" caps>The Lambda Calculus</Heading>
-          <Text size={3} textColor="secondary">
+          <Text size={1} fit textColor="secondary">
             A mathematical system for expressing functions
           </Text>
-          <Text size={3} textColor="secondary">
+          <br/>
+          <Text size={3} fit textColor="secondary">
             variable bindings, abstractions, and eventually types
           </Text>
         </Slide>
@@ -214,16 +223,59 @@ export default class Presentation extends React.Component {
           </Text>
         </Slide>
 
-        {/* Lisp Features */}
+        {/* ALGOL 60 */}
         <Slide transition={["fade"]} bgColor="tertiary">
+          <Heading size={2} textColor="secondary">ALGOL 60</Heading>
           <Text size={3} textColor="secondary">
-            Heavily used Linked List, Recursion
+            Designed by commitee
           </Text>
- 
           <Text size={3} textColor="secondary">
-            Metaprogramming made easy with macros
+            Introduced "scope"
+          </Text>
+          <Text size={3} textColor="secondary">
+            Father of all modern syntax
           </Text>
         </Slide>
+
+        {/* ALGOL 60 */}
+        <Slide transition={["fade"]} bgColor="tertiary">
+          <Heading size={2} textColor="secondary">Array Processing Language</Heading>
+          <Text size={3} textColor="secondary">
+            all data is a multidimensional array, everything else is an operator
+          </Text>
+          <Text size={3} textColor="secondary">
+            overloading operators
+          </Text>
+          <Text size={3} textColor="secondary">
+            Python but for old hipsters
+          </Text>
+        </Slide>
+
+        {/* Pascal */}
+        <Slide transition={["fade"]} bgColor="tertiary">
+          <Heading size={2} textColor="secondary">Pascal, 1970</Heading>
+          <Text size={3} textColor="secondary">
+            Record types
+          </Text>
+          <Text size={3} textColor="secondary">
+            Beautiful string encoding
+          </Text>
+          <Text size={3} textColor="secondary">
+            subroutines
+          </Text>
+          <Text size={3} textColor="secondary">
+            Apple II
+          </Text>
+        </Slide>
+
+        {/* Metalanguage */}
+        <Slide transition={["fade"]} bgColor="tertiary">
+          <Heading size={2} textColor="secondary">Meta Language (ML)</Heading>
+          <Text size={3} textColor="secondary">
+            Father of OCaml, Haskell, Scala, F#, Elm
+          </Text>
+        </Slide>
+
 
         {/* ML vs C */}
         <Slide transition={["fade"]} bgColor="tertiary">
@@ -234,6 +286,24 @@ export default class Presentation extends React.Component {
                 Gary Bernhardt (garybernhardt) May 20, 2015
             </Cite>
           </BlockQuote>
+        </Slide>
+
+        {/* Smalltalk */}
+        <Slide transition={["fade"]} bgColor="tertiary">
+          <Heading size={2} textColor="secondary">Smalltalk, 1980</Heading>
+          <Text size={3} textColor="secondary">
+            First Object-Oriented Language
+          </Text>
+          <Text size={3} textColor="secondary">
+            Alan Kay at Xerox PARC
+          </Text>
+          <Text size={3} textColor="secondary">
+            All other OOP languages are in some form a 
+            bastardization of Kay&rsquo;s dream
+          </Text>
+          <Text>
+            "Message passing as encapsulation"
+          </Text>
         </Slide>
       </Deck>
     );
