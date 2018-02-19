@@ -199,73 +199,78 @@ export default class Presentation extends React.Component {
 
         {/* Lisp */}
         <Slide transition={["fade"]} bgColor="tertiary">
-          <Heading size={2} textColor="secondary">Lisp</Heading>
-          <Text size={3} textColor="secondary">
+          <Heading size={1} textColor="secondary">Lisp</Heading>
+          <br/>
+          <Text size={3} fit textColor="secondary">
             Invented by John McCarthy (father of modern AI) in 1957
-          </Text>
+          </Text><br/>
  
-          <Text size={3} textColor="secondary">
-            designed as an abstraction over the lambda calculus
-          </Text>
-          <Text size={3} textColor="secondary">
-            not implemented for years, though eventually given successful hardware support via "Lisp Machines"
-          </Text>
+          <Text size={3} fit textColor="secondary">
+            Designed as an abstraction over the lambda calculus
+          </Text> <br/>
+          <Text size={1} fit fill textColor="secondary">
+            Not implemented for years, though eventually</Text>
+          <Text size={1} fit fill textColor="secondary" >given successful hardware support via "Lisp Machines"</Text>
+          <br/>
         </Slide>
 
         {/* Lisp Features */}
         <Slide transition={["fade"]} bgColor="tertiary">
-          <Text size={3} textColor="secondary">
+          <Text size={3} fit textColor="secondary">
             Heavily used Linked List, Recursion
-          </Text>
+          </Text><br/>
  
-          <Text size={3} textColor="secondary">
+          <Text size={3} fit fill textColor="secondary">
             Metaprogramming made easy with macros
-          </Text>
-          <Text size={3} textColor="secondary">
-            Highly consistent: everything is either a function or a linked-list node
-          </Text>
+          </Text><br/>
+
+          <Text size={3} fit textColor="secondary">
+            Everything is either a function or a linked-list node
+          </Text><br/>
         </Slide>
 
         {/* ALGOL 60 */}
         <Slide transition={["fade"]} bgColor="tertiary">
           <Heading size={2} textColor="secondary">ALGOL 60</Heading>
+          <br/>
           <Text size={3} textColor="secondary">
             Designed by commitee
-          </Text>
+          </Text><br/>
           <Text size={3} textColor="secondary">
             Introduced "scope"
-          </Text>
+          </Text><br/>
           <Text size={3} textColor="secondary">
             Father of all modern syntax
           </Text>
         </Slide>
 
-        {/* ALGOL 60 */}
+        {/* APL */}
         <Slide transition={["fade"]} bgColor="tertiary">
-          <Heading size={2} textColor="secondary">Array Processing Language</Heading>
-          <Text size={3} textColor="secondary">
-            all data is a multidimensional array, everything else is an operator
-          </Text>
-          <Text size={3} textColor="secondary">
-            overloading operators
-          </Text>
+          <Heading size={3} textColor="secondary">Array Processing Language</Heading>
+          <br/>
           <Text size={3} textColor="secondary">
             Python but for old hipsters
+          </Text><br/>
+          <Text size={3} textColor="secondary">
+            all data is a multidimensional array, everything else is an operator
+          </Text><br/>
+          <Text size={3} textColor="secondary">
+            overloading operators
           </Text>
         </Slide>
 
         {/* Pascal */}
         <Slide transition={["fade"]} bgColor="tertiary">
-          <Heading size={2} textColor="secondary">Pascal, 1970</Heading>
+          <Heading size={2} textColor="secondary">Pascal, 1970</Heading><br/>
           <Text size={3} textColor="secondary">
             Record types
-          </Text>
+          </Text><br/>
           <Text size={3} textColor="secondary">
             Beautiful string encoding
-          </Text>
+          </Text><br/>
           <Text size={3} textColor="secondary">
             subroutines
-          </Text>
+          </Text><br/>
           <Text size={3} textColor="secondary">
             Apple II
           </Text>
@@ -273,7 +278,8 @@ export default class Presentation extends React.Component {
 
         {/* Metalanguage */}
         <Slide transition={["fade"]} bgColor="tertiary">
-          <Heading size={2} textColor="secondary">Meta Language (ML)</Heading>
+          <Heading size={1} fit fill textColor="secondary">Meta Language (ML)</Heading>
+          <br/>
           <Text size={3} textColor="secondary">
             Father of OCaml, Haskell, Scala, F#, Elm
           </Text>
@@ -285,27 +291,33 @@ export default class Presentation extends React.Component {
           <BlockQuote>
             <Quote textSize={72}>C and ML were both finished in 73. ML had first-class functions, GC, type inference, algebraic data types, pattern matching, and exceptions.
             </Quote>
-            <Cite>
-                Gary Bernhardt (garybernhardt) May 20, 2015
-            </Cite>
+            <Text size={3} textColor="secondary">
+                Gary Bernhardt, May 20, 2015
+            </Text>
           </BlockQuote>
         </Slide>
 
         {/* Smalltalk */}
         <Slide transition={["fade"]} bgColor="tertiary">
-          <Heading size={2} textColor="secondary">Smalltalk, 1980</Heading>
+          <Heading size={2} textColor="secondary">Smalltalk, 1980</Heading><br/>
           <Text size={3} textColor="secondary">
             First Object-Oriented Language
-          </Text>
+          </Text><br/>
           <Text size={3} textColor="secondary">
             Alan Kay at Xerox PARC
-          </Text>
+          </Text><br/>
           <Text size={3} textColor="secondary">
             All other OOP languages are in some form a 
             bastardization of Kay&rsquo;s dream
-          </Text>
+          </Text><br/>
           <Text>
             "Message passing as encapsulation"
+          </Text>
+        </Slide>
+
+        <Slide transition={["fade"]} bgColor="tertiary">
+          <Text size={1} fit fill textColor="secondary">
+            robbiemckinstry.github.io/language-history
           </Text>
         </Slide>
       </Deck>
