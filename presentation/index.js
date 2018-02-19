@@ -11,7 +11,8 @@ import {
   List,
   Quote,
   Slide,
-  Text
+  Text,
+  hasSlideChildren
 } from "spectacle";
 
 // Import theme
@@ -33,15 +34,51 @@ const theme = createTheme({
 export default class Presentation extends React.Component {
   render() {
     return (
-      <Deck transition={["zoom", "slide"]} transitionDuration={500} theme={theme}>
-        <Slide transition={["zoom"]} bgColor="primary">
+      <Deck transition={["zoom", "slide"]} 
+            transitionDuration={500} 
+            theme={theme}>
+        <Slide transition={["fade"]} bgColor="tertiary">
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
-            Spectacle Boilerplate
+            The History of Digital <br/>Programming Languages
           </Heading>
-          <Text margin="10px 0 0" textColor="tertiary" size={1} fit bold>
-            open the presentation/index.js file to get started
-          </Text>
         </Slide>
+      </Deck>
+    );
+  }
+}
+        /*
+        // Title
+
+
+
+        // About me
+        <Slide transition={["fade"]} bgColor="tertiary">
+            <Text size={2} textColor="secondary">
+                Robbie McKinstry
+            </Text>
+            <Text size={2} textColor="secondary">
+                HashiCorp
+            </Text>
+            <Text size={2} textColor="secondary">
+                robbie@hashicorp.com
+            </Text>
+            <Text size={2} textColor="secondary">
+                Pitt CS Class of 2017
+            </Text>
+        </Slide>
+
+        // Overview
+        //<Slide transition={["fade"]} bgColor="tertiary">
+          // <Heading size={2} textColor="secondary" caps>Overview</Heading>
+          //<List>
+          //  <ListItem>Early Foundational Langs</ListItem>
+          //  <ListItem>Structured Languages</ListItem>
+          //  <ListItem>1980s Experimentation</ListItem>
+          //</List>
+        // </Slide>
+
+
+
         <Slide transition={["fade"]} bgColor="tertiary">
           <Heading size={6} textColor="primary" caps>Typography</Heading>
           <Heading size={1} textColor="secondary">Heading 1</Heading>
@@ -59,6 +96,9 @@ export default class Presentation extends React.Component {
             <ListItem>Item 3</ListItem>
             <ListItem>Item 4</ListItem>
           </List>
+          <Text margin="10px 0 0" textColor="tertiary" size={1} fit bold>
+            open the presentation/index.js file to get started
+          </Text>
         </Slide>
         <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
           <BlockQuote>
@@ -66,7 +106,4 @@ export default class Presentation extends React.Component {
             <Cite>Author</Cite>
           </BlockQuote>
         </Slide>
-      </Deck>
-    );
-  }
-}
+        */
